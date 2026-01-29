@@ -19,11 +19,12 @@ function calculator(){
              marginleft:"260",
              marginTop:"20px",
              backgroundColor:"lightblue",}}>
-                <p><strong>addition</strong></p>
-                <p><strong>subtraction</strong></p>
-                <p><strong>multiplaction</strong></p>
-                <p><strong>division</strong></p>
+                <p><strong>addition</strong>{a+b}</p>
+                <p><strong>subtraction</strong>{a-b}</p>
+                <p><strong>multiplaction</strong>{a*b}</p>
+                <p><strong>division</strong>{a/b}</p>
             </div>
         </div>
     )
 }
+export default calculator;

@@ -1,0 +1,29 @@
+import React from "react";
+
+function calculator(){
+    const [value1, setvalue1]=usesatate(0);
+    const [value2, setvalue2]=usesatate(0);
+
+    const a=Number(value1)
+    const b=Number(value2)
+    return(
+        <div>
+            <h1 style={{textDecoration:"underline"}}>calculator</h1>
+            <input type="number" placeholder="enter the first value" value={value1}
+            onChange={(e)=> setvalue1(Number(e.target.value))}/>
+            <input type="number" placeholder="enter the second value" value={value2} 
+            onChange={(e)=> setvalue2(Number(e.target.value))}/>
+            <div style={{height:"140px",
+             width:"200px",
+             border:"5px inset black",
+             marginleft:"260",
+             marginTop:"20px",
+             backgroundColor:"lightblue",}}>
+                <p><strong>addition</strong></p>
+                <p><strong>subtraction</strong></p>
+                <p><strong>multiplaction</strong></p>
+                <p><strong>division</strong></p>
+            </div>
+        </div>
+    )
+}
